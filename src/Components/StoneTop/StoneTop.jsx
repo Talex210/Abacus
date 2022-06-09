@@ -5,12 +5,12 @@ const StoneTop = (props) => {
     let positionStoneLeft = -71;
     return (
         <div>
-            {props.stoneTop.map(f =>
+            {props.stoneTop.map(sh =>
                 <img src={Vector5} alt='stone' style={{
                     position: 'absolute', top: '15px',
-                    left: `${positionStoneLeft += 75 + f / 6}px`
+                    left: `${positionStoneLeft += 75 + sh / 5}px`
                 }
-                } key={f}/>
+                } key={sh}/>
             )}
         </div>
     );
