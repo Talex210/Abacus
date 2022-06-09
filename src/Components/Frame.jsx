@@ -1,6 +1,6 @@
 import React from 'react';
-import Frame5 from '../../img/Frame5.png';
-import Frame6 from '../../img/Frame6.png';
+import Frame5 from '../img/Frame5.png';
+import Frame6 from '../img/Frame6.png';
 
 const Frame = (props) => {
     return (

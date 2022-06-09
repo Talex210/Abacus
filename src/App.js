@@ -1,8 +1,8 @@
 import './App.css';
 import {useState} from 'react';
-import Frame from './Components/Frame/Frame';
-import StoneTop from './Components/StoneTop/StoneTop';
-import StoneDown from './Components/StoneDown/StoneDown';
+import Frame from './Components/Frame';
+import StoneTop from './Components/StoneTop';
+import StoneDown from './Components/StoneDown';
 import Frame5 from './img/Frame5.png';
 import Frame6 from './img/Frame6.png';
 import Stone1 from './img/Vector5.png';
@@ -46,11 +46,7 @@ function App() {
         let stones = [];
         const setStones = (count) => {
             stones = [];
-            let numberStone = Number(prompt(`Количество костей на стержне ${count}`));
-            /*if (numberStone == 'NaN') { /!*не работает*!/
-                alert('Пожалуйста, вводите только цифры')
-                numberStone = Number(prompt(`Количество костей на стержне ${count}`));
-            } */
+            let numberStone = Number(prompt(`Количество камней на стержне: ${count}`));
             for (let i = 1; i <= numberStone; i++) {
                 stones.push(i);
             }

@@ -1,6 +1,6 @@
 import React from 'react';
-import Stone1 from '../../img/Vector5.png';
-import Stone2 from '../../img/Vector6.png';
+import Stone1 from '../img/Vector5.png';
+import Stone2 from '../img/Vector6.png';
 
 const StoneTop = (props) => {
     let positionStoneLeft = -71;
