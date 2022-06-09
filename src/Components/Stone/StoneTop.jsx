@@ -8,7 +8,7 @@ const StoneTop = (props) => {
             {props.stoneTop.map(f =>
                 <img src={Vector5} alt='stone' style={{
                     position: 'absolute', top: '15px',
-                    left: `${positionStoneLeft += 75 + f / 5}px`
+                    left: `${positionStoneLeft += 75 + f / 6}px`
                 }
                 } key={f}/>
             )}
