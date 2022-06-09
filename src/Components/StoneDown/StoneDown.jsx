@@ -1,27 +1,25 @@
 import React from 'react';
-import Vector5 from "../../img/Vector5.png";
+import Vector5 from '../../img/Vector5.png';
 
 const StoneDown = (props) => {
-    let positionStoneLeft = -71;
-    let positionStoneTop = 260;
+    let positionStoneTop;
+    const changePositionStoneTop = (i) => {
+        if (i === 0) {positionStoneTop = 290}
+        positionStoneTop -= 35
+        return positionStoneTop
+    }
     return (
         <div>
-            {props.stoneDownNumberColumn.map( sv =>
-                <img src={Vector5} alt='stone' style={{
-                position: 'absolute', top: `${positionStoneTop -= 35}px`,
-                left: '5px'
-            }
-            } key={sv}/>
-                )}
-            {props.stoneDown.map(sh =>
-                <img src={Vector5} alt='stone' style={{
-                    position: 'absolute', top: '260px',
-                    left: `${positionStoneLeft += 75 + sh / 5}px`
-                }
-                } key={sh}/>
+            {props.stoneDown.map( s =>
+                s.column.map( (c, i) =>
+                    <img src={Vector5} alt='stone' style={{
+                        position: 'absolute', top: `${changePositionStoneTop(i)}px`,
+                        left: `${s.positionStoneLeft}px`
+                    }} key={i}/>
+                )
             )}
         </div>
-    );
-};
+    )
+}
 
 export default StoneDown;

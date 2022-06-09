@@ -1,5 +1,5 @@
 import React from 'react';
-import Frame5 from "../../img/Frame5.png";
+import Frame5 from '../../img/Frame5.png';
 
 const Frame = (props) => {
     return (
@@ -8,7 +8,7 @@ const Frame = (props) => {
                 <img src={Frame5} alt='frame' key={f}/>
             )}
         </div>
-    );
-};
+    )
+}
 
 export default Frame;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Vector5 from "../../img/Vector5.png";
+import Vector5 from '../../img/Vector5.png';
 
 const StoneTop = (props) => {
     let positionStoneLeft = -71;
@@ -13,7 +13,7 @@ const StoneTop = (props) => {
                 } key={sh}/>
             )}
         </div>
-    );
-};
+    )
+}
 
 export default StoneTop;
